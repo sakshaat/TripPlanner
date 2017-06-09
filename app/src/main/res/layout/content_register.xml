@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".gui.main.MainActivity$RegisterActivity"
+        tools:showIn="@layout/activity_register"
+        android:orientation="vertical">
+
+
+        <TextView android:id="@+id/thanks"
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@string/thanks" />
+
+        <EditText android:id="@+id/username_register"
+            android:layout_marginTop="30dp"
+            android:inputType="textEmailAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"/>
+
+        <EditText android:id="@+id/password_register"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:hint="@string/password"/>
+
+        <EditText android:id="@+id/first_name_register"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:hint="@string/first_name"/>
+
+        <EditText android:id="@+id/last_name_register"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:hint="@string/last_name"/>
+
+        <EditText android:id="@+id/address_register"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:hint="@string/address"/>
+
+        <EditText android:id="@+id/credit_card_number_register"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:minLines="1"
+            android:hint="@string/ccn"/>
+
+        <EditText android:id="@+id/credit_card_expiry_date_register"
+            android:layout_marginTop="10dp"
+            android:inputType="numberSigned|number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:maxLength="10"
+            android:hint="@string/exp"
+            tools:ignore="TextFields"
+            android:digits="0123456789-"/>
+
+        <Button android:id="@+id/register_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:theme="@style/AppTheme"
+            android:background="#4da5ff"
+            android:onClick="registerClient"/>
+
+
+    </LinearLayout>
+</ScrollView>

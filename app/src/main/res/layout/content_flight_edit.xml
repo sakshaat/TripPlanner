@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".gui.flight.FlightEditActivity"
+    tools:showIn="@layout/app_bar_flight_edit">
+
+    <EditText android:id="@+id/display_flight_number_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_departure_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_arrival_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_airline_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_origin_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_destination_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_price_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/display_numSeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/edit_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:theme="@style/AppTheme"
+        android:background="#4da5ff"
+        android:onClick="updateFlightInformation"/>
+
+
+</LinearLayout>

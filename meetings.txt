@@ -1,0 +1,114 @@
+Monday November 9th, 4:00pm - 5:00pm:
+ - made collaborative CRC
+ - meeting for Tuesday at 7
+
+---------------------------------------------------------------
+
+Tuesday November 10th, 9:30pm - 11:00pm:
+    
+Things that got done:
+- Created Package Folders
+- Created Java files for all classes necessary (Headers only, no code yet)
+- Finished implementing appUser class.
+- Completed first draft of CRC cards and converted into pdf format.
+
+Things that we started:
+- Started implementation of Classes; Flight, Itinerary.
+
+Things to Complete by next meeting:
+- Complete Flight Class (Govind)
+- Complete Client Class (Daerian)
+- Complete Admin Class (Simon)
+- Complete Itinerary Class (Sakshaat)
+- Try to finish Search Method in Itinerary Manager (Sakshaat, Mohammed)
+
+Start Thinking About:
+- AccountManager (Simon, Daerian)
+
+---------------------------------------------------------------
+
+Thursday November 12th, 2015, 9:05pm - 11:41pm
+
+Things that got done:
+- Implementation of Flight, Itinerary, Admin, Client. 
+- Reading/Writing of files in AccountManager.
+
+
+Things that we started:
+- Implemented search for itineraryManager, but not tested.
+
+Things to Complete by next meeting:
+- Add Observable and Observers. (Daerian)
+- Start implementation of FlightManager (Govind)
+
+---------------------------------------------------------------
+
+Monday - Tuesday, November 24th 2015, 8:30pm - 2:16am
+
+Things that got done:
+- Started work on the Main Activity.
+- Distributed work evenly.
+- Laid out a plan for the group.
+
+Things that we started:
+- Implemented activities for Login, Register and ClientView
+
+Things to Complete by next meeting:
+- Finish the log in part of the TA meeting (Simon)
+- Finish the Client view part of the TA meeting (Sakshaat)
+- Finish the RegisterActivity (Govind)
+- Finish the BookingActivity (Mohammed)
+- Help with all code and debugging. ( Daerian)
+
+---------------------------------------------------------------
+
+Friday, November 27th 2015, 4:00pm - 5:00 pm
+
+Things that got done:
+- Finished rRgisterActvity all code and layout
+- Clients can log in, and Layout is complete
+- Main page has all code and layout complete
+
+Things that we started:
+- Discussed layout, and work distribution for the remaining work.
+- Shared Ideas and concepts for implementation
+
+Things to complete by next meeting:
+- Finish Admin (Govind)
+- Finish Itineraries (Mohammed)
+- Finish Client (Sakshaat)
+- Finish Flights and related activities (Simon and Daerian)
+
+---------------------------------------------------------------
+
+   ***************************************************************
+   ||* NOTE: Simon tried to commit but it wouldn’t go through. *||
+   ***************************************************************
+
+Monday, November 30th 2015, 2:30pm - 04:47 am (Yes we we're in the lab for 14.1 hours.)
+
+Things that got done:
+- Finished activities corresponding to displaying all flights and editing the information inside the activity (Simon And Daerian worked on one computer).
+- Admin can now log in, logout, change password, connect to FlightsView, connect to ClientEditActivity
+    (Govind started implementing, Sakshaat fixed persistent errors that caused the code to crash).
+- Finished SearchView Activity, ItineraryListView. Where users can now search for and find itineraries (Mohammed).
+
+
+Things that we started:
+- Optimization of FlightsView, FlightEditActivity, AccountManager. (Daerian, Simon, Sakshaat)
+- Implemented internal serialization, deserliazation (saving to internal memory). (Sakshaat, Simon)
+
+Things to complete by next meeting:
+
+- A User can search available fights by entering a departure date, and travel origin and destination. (Simon / Daerian)
+
+- A User can display search results sorted by total travel time or by total cost.
+
+- A User can upload (in a csv file { see format below) personal and billing client information to be stored
+    in the system.
+
+- A User can upload (in a csv file { see format below) ights information into the system.
+
+- In the p3 directory, commit the plaintext password file, passwords.txt, that you will be using for authentication.
+
+- An Admin can view personal and billing information stored for any Client.

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:foregroundGravity="bottom">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context=".gui.client.ClientView"
+                    tools:showIn="@layout/app_bar_client_view">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#4da5ff"
+            android:text="@string/make_new_booking"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/allItineraries"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:onClick="search"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="20dp"
+            android:background="#4da5ff"
+            android:onClick="getBookings"
+            android:text="@string/view_booking"
+            android:textColor="#ffffff"
+            android:theme="@style/AppTheme"/>
+
+        <Button
+            android:id="@+id/clientFlightView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button"
+            android:layout_alignStart="@+id/button"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="20dp"
+            android:background="#4da5ff"
+            android:onClick="viewAllFlights"
+            android:text="@string/view_all_flights"
+            android:textColor="#ffffff"
+            android:theme="@style/AppTheme"/>
+
+        <TextView
+            android:id="@+id/firstlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="82dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:id="@+id/allItineraries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/client_view_booked"
+            android:textColor="#2c2c2c"
+            android:textSize="30sp"
+            android:layout_below="@+id/firstlastname"
+            android:layout_alignParentStart="true"/>
+
+
+    </RelativeLayout>
+</ScrollView>
